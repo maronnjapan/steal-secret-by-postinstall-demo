@@ -6,6 +6,5 @@
     "scripts": {
         "postinstall": "node install.js"
     },
-    "author": "",
-    "license": "MIT"
+    "author": ""
 }

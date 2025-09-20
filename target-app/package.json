@@ -7,7 +7,6 @@
     },
     "keywords": [],
     "author": "",
-    "license": "ISC",
     "description": "",
     "dependencies": {
         "steal-private-key-library": "file:../steal-private-key-library"
